@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+/*Imported font form browser*/
+body{
+  background-color: rgb(243, 229, 217);
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  font-size: 15px;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6.5rem;
+  scroll-behavior: smooth;
+}
+
+
+/*Naviation bar Styling*/
+nav{
+	background: rgb(247, 214, 186);
+	height: 85px;
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	position: fixed;
+  }
+  /*Logo Styling*/
+  label.logo{
+	color: brown;
+	font-size: 35px;
+	line-height: 85px;
+	padding: 0 90px;
+	font-family:'Nunito';
+	letter-spacing: 2px;
+  }
+  nav ul{
+	float: right;
+	margin-right: 90px;
+  }
+  nav ul li{
+	display: inline-block;
+	line-height: 85px;
+	margin: 0 20px;
+  }
+  nav ul li a{
+	color: brown;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 7px 13px;
+	border-radius: 3px;
+	border: 1px solid brown;
+  }
+  a.active,body nav ul li a:hover{
+	color:rgb(247, 227, 210);
+	background: brown;
+	transition: .3s;
+  }/* Cart Items*/
+.small-container{
+	padding: 100px 200px;
+}
+/*Table class styling*/
+  table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.cart-info
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+th{
+	text-align: left;
+	padding: 10px;
+	color:rgb(241, 237, 234);
+	background-color: brown;
+	font-weight: normal;
+	border-radius: 5px;
+}
+td{
+	padding: 10px 5px;;
+}
+td input{
+	width: 40px;
+	height: 30px;
+	padding: 5px;
+	background-color: rgb(226, 190, 162);
+	border-radius: 4px;
+}
+td a{
+	color: brown;
+	font-size: 15px;
+
+}
+td h3 a{
+	color:rgb(226, 190, 162);
+	background-color: brown;
+	border-radius: 10px;
+	padding: 15px 25px;
+}
+td h3 a:hover{
+	color:brown;
+	background-color: rgb(240, 160, 99);
+	border-radius: 10px;
+	padding: 15px 25px;
+}
+td img{
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+.total-price{
+	display: flex;
+	justify-content: flex-end;
+}
+.total-price table{
+	border-top: 3px solid rgb(226, 190, 162);
+	width: 100%;
+	max-width: 480px;
+}
+td:last-child{
+	text-align: right;
+}
+th:last-child{
+	text-align: right;
+}
+/* Footer class Editing*/
+.footer .credit1{
+	padding:1.5rem 3rem;
+	border-top: .2rem solid rgba(0,0,0,.1);
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 2rem;
+  }
+
+  .footer .credit1 span{
+	color:brown;
+  }
+  .footer .credit{
+	padding:1.5rem 3rem;
+	text-align: center;
+	font-size: 2rem;
+  }
+
+  .footer .credit span{
+	color:brown;
+  }
+  .footer .box-container .box .share a{
+	padding:0;
+	height:4rem;
+	width:4rem;
+	line-height: 4rem;
+	text-align: center;
+  }

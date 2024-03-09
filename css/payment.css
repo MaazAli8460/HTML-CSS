@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+/* Navigation bar*/
+nav{
+  background: rgb(247, 214, 186);
+  height: 85px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: fixed;
+}
+label.logo{
+  color: brown;
+  font-size: 35px;
+  line-height: 85px;
+  padding: 0 90px;
+  font-family:'Nunito';
+  letter-spacing: 2px;
+}
+nav ul{
+  float: right;
+  margin-right: 90px;
+  z-index: +10;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 85px;
+  margin: 0 20px;
+}
+nav ul li a{
+  color: brown;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+  border: 1px solid brown;
+}
+a.active,body nav ul li a:hover{
+  color:rgb(247, 227, 210);
+  background: brown;
+  transition: .3s;
+}
+/* Container Class*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+/*  background: linear-gradient(90deg, rgb(247, 227, 210) 60%, rgb(247, 227, 210)  40.1%);*/
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: rgb(238, 191, 150);
+
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid rgb(241, 175, 116);
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid brown;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  z-index: -1;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: brown;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: rgb(241, 175, 116);
+  color: brown;
+}
+.footer{
+  background-color: rgb(247, 227, 210) ;
+}
+.footer .credit1{
+  padding:1.5rem 3rem;
+  border-top: .2rem solid rgba(0,0,0,.1);
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer .credit1 span{
+  color:brown;
+}
+.footer .credit{
+  padding:1.5rem 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color:brown;
+}
+.footer .box-container .box .share a{
+  padding:0;
+  height:4rem;
+  width:4rem;
+  line-height: 4rem;
+  text-align: center;
+}

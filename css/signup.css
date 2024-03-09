@@ -1,0 +1,242 @@
+/* for loading font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+body{
+    background-color: rgb(243, 229, 217);
+  }
+  
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+  }
+nav{
+    background: rgb(247, 214, 186);
+    height: 85px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    z-index: +3;
+  }
+  label.logo{
+    color: brown;
+    font-size: 35px;
+    line-height: 85px;
+    padding: 0 90px;
+    font-family:'Nunito';
+    letter-spacing: 2px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 90px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 85px;
+    margin: 0 20px;
+  }
+  nav ul li a{
+    color: brown;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    border: 1px solid brown;
+  }
+  a.active,body nav ul li a:hover{
+    color:rgb(247, 227, 210);
+    background: brown;
+    transition: .3s;
+  }
+
+    .wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .container{
+   
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    background: rgb(247, 214, 186);
+    box-shadow: 0 0 5px #999999;
+    }
+
+
+
+    .signup .col-left,
+    .signup .col-right{
+    padding: 30px;
+    display: flex;
+    }
+
+
+    .signup .col-left{
+    width: 60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0 );
+    background: brown;
+    }
+
+    .signup .col-right{
+    padding: 60px 30px;
+    width: 50%;
+    margin-left: -10%;
+    }
+    
+    
+    @media(max-width: 575px){
+        .signup .container{
+        flex-direction: column;
+        box-shadow: none;
+        }
+        .signup .col-left,
+        .signup .col-right{
+        width: 100%;
+        margin: 0;
+        clip-path: none;
+        }
+        .signup .col-right{
+        padding: 30px;
+        }
+        
+        }
+
+        
+        .signup .signup-text{
+        position: relative;
+        width: 100%;
+        color: #ffffff;
+        }
+
+        .signup .signup-text h2{
+        margin: 0 0 15px 0;
+        font-size: 30px;
+        font-weight: 700;
+        }
+
+        .signup .signup-text p{
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        }
+        
+        .signup .signup-text .btn{
+        display: inline-block;
+        font-family: poppins;
+        padding: 7px 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #ffffff;
+        outline: none;
+        border: 1px solid #ffffff;
+        transition: .3s;
+        }
+        
+        .signup .signup-text .btn:hover{
+        color: brown;
+        background-color: rgb(247, 227, 210);
+        }
+        
+        .signup .signup-form{
+        position: relative;
+        width: 100%;
+        }
+        .signup .signup-form h2{
+        margin: 0 0 15px 0;
+        font-size: 22px;
+        font-weight: 700;
+        }
+        .signup .signup-form p{
+        margin: 0 0 10px 0;
+        text-align: left;
+        color: #666666;
+        font-size: 15px;
+        }
+        .signup .signup-form p:last-child{
+        margin: 0;
+        padding-top: 3px;
+        }
+        .signup .signup-form p a{
+        color: brown;
+        font-size: 14px;
+        text-decoration: none;
+        }
+        .signup .signup-form label {
+        display: block;
+        width: 100%;
+        margin-bottom: 2px;
+        letter-spacing: .5px;
+        }
+        .signup .signup-form p:last-child label{
+        width: 60%;
+        float: left;
+        }
+        .signup .signup-form label span{
+        color: #ff574e;
+        padding-left: 2px;
+        }
+        .signup .signup-form input{
+        display: block;
+        width: 100%;
+        height: 35px;
+        padding: 0 10px;
+        border-radius: 5px;
+        }
+        .signup .signup-form input:focus{
+        border-color: #ff574e;
+        }
+        .footer .credit1{
+          padding:1.5rem 3rem;
+          border-top: .2rem solid rgba(0,0,0,.1);
+          margin-top: 1rem;
+          text-align: center;
+          font-size: 2rem;
+        }
+        
+        .footer .credit1 span{
+          color:brown;
+        }
+        .footer .credit{
+          padding:1.5rem 3rem;
+          text-align: center;
+          font-size: 2rem;
+        }
+        
+        .footer .credit span{
+          color:brown;
+        }
+        .footer .box-container .box .share a{
+          padding:0;
+          height:4rem;
+          width:4rem;
+          line-height: 4rem;
+          text-align: center;
+        } 
+    
+
+    
