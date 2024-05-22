@@ -1,1 +1,1 @@
-this is a crude project. images are not licensed so !not for comercial use
+This was a basic front end project. images are not licensed so ! not for commercial use
